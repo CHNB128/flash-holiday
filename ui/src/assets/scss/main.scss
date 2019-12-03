@@ -1,0 +1,40 @@
+.logo {
+  width: 24px;
+  height: 24px;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+}
+
+.container-md {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@mixin color-text {
+  background: linear-gradient(90deg,#ff8a00, #e52e71);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:
+  transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  text-shadow: none;
+}
+
+h2 {
+  @include color-text;
+  text-align: center;
+  text-transform: uppercase !important;
+}
+
+h3 {
+  @include color-text;
+  text-align: center;
+}
+
+button {
+  border-radius: 1.25rem !important;
+}
